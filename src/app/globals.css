@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dark-primary: #333; /* Define dark-primary color */
+}
+
+.dark-primary {
+  color: var(--dark-primary); /* Apply dark-primary color */
+}
+
+/* Mobile-specific styles for small devices */
+@media (max-width: 390px) {
+  body {
+    font-size: small;
+    padding: 15px;
+     /* Adjust padding for small screens */
+  }
+  .dark-primary {
+    font-size: 16px; /* Adjust font size for dark-primary text */
+  }
+}
+
+/* Styles for larger screens (desktops or tablets) */
+@media (min-width: 1440px) {
+  body {
+    padding: 30px; /* Increased padding for larger screens */
+  }
+  .dark-primary {
+    font-size: 18px; /* Larger font size for better visibility on large screens */
+  }
+}
